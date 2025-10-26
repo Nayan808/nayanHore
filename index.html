@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nayan Hore - Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="code">{</span> NH <span class="code">}</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#certifications">CERTIFICATIONS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="terminal-btn red"></span>
+                        <span class="terminal-btn yellow"></span>
+                        <span class="terminal-btn green"></span>
+                    </div>
+                    <span class="terminal-title">data_analyst_terminal.exe</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-text" id="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="heroChart"></canvas>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="tag">&lt;about&gt;</span>
+                ABOUT ME
+                <span class="tag">&lt;/about&gt;</span>
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="data-text">
+                        I'm <span class="highlight">Nayan Hore</span>, a Data Analyst currently pursuing MCA in Computer Science with 8.10 CGPA at Raisoni Nagpur. I hold a BCCA degree from RTM Nagpur University. I specialize in Power BI, Advanced SQL, Excel, and Python, with proven expertise in developing multi-department dashboards, automated data workflows, and delivering actionable insights that drive business growth. My projects have integrated 1M+ records, achieved 25% storage reduction, 10% efficiency improvements, and delivered insights projecting 10% revenue growth for AtliQ Hardware.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                        <div class="stat-value" data-target="6">0</div>
+                        <div class="stat-label">Major Projects</div>
+                        <div class="stat-bar">
+                            <div class="stat-fill" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" data-target="8.10">0</div>
+                        <div class="stat-label">MCA CGPA</div>
+                        <div class="stat-bar">
+                            <div class="stat-fill" style="width: 92%"></div>
+                        </div>
+                    </div>
+                        <div class="stat-card">
+                            <div class="stat-value" data-target="16">0</div>
+                            <div class="stat-label">Competitions Won</div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                        <div class="stat-value" data-target="8">0</div>
+                        <div class="stat-label">Certifications</div>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="tag">&lt;skills&gt;</span>
+                TECHNICAL SKILLS
+                <span class="tag">&lt;/skills&gt;</span>
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Core Technologies</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">SQL (Advanced)</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="96"></div>
+                        </div>
+                        <span class="skill-percent">96%</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Python</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="92"></div>
+                        </div>
+                        <span class="skill-percent">92%</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Advanced Excel</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                        <span class="skill-percent">95%</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Power Query</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="94"></div>
+                        </div>
+                        <span class="skill-percent">94%</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Visualization</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">Power BI</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                        <span class="skill-percent">95%</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Power Query</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="93"></div>
+                        </div>
+                        <span class="skill-percent">93%</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">DAX</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">HTML/CSS</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Specializations</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">Data Analysis</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="94"></div>
+                        </div>
+                        <span class="skill-percent">94%</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Dashboard Development</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="96"></div>
+                        </div>
+                        <span class="skill-percent">96%</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Advanced SQL Queries</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="93"></div>
+                        </div>
+                        <span class="skill-percent">93%</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Business Intelligence</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="91"></div>
+                        </div>
+                        <span class="skill-percent">91%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="tag">&lt;projects&gt;</span>
+                FEATURED PROJECTS
+                <span class="tag">&lt;/projects&gt;</span>
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">🚗</div>
+                    <h3>EV Market Analysis - AtliQ Motors</h3>
+                    <p class="project-desc">Engineered an interactive Power BI dashboard analyzing EV penetration and sales trends. Uncovered 93.91% CAGR and 3.61% penetration rate, forecasting high-growth regions. Proposed data-driven strategies on manufacturing sites and brand positioning.</p>
+                    <div class="project-tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Power BI</span>
+                    </div>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">93.91%</span>
+                            <span class="metric-label">CAGR</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">3.61%</span>
+                            <span class="metric-label">Penetration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">📊</div>
+                    <h3>P&L Report Analysis</h3>
+                    <p class="project-desc">Formulated a 3-year P&L Report for AtliQ Hardware using Pivot Tables and DAX. Automated data cleaning with Power Query, saving 4 hours of manual work. Crafted DAX measures offering 25% more flexibility.</p>
+                    <div class="project-tags">
+                        <span class="tag">Excel</span>
+                        <span class="tag">Power Query</span>
+                        <span class="tag">DAX</span>
+                    </div>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">4 hrs</span>
+                            <span class="metric-label">Time Saved</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">25%</span>
+                            <span class="metric-label">Flexibility</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">🏪</div>
+                    <h3>Consumer Goods Analysis</h3>
+                    <p class="project-desc">Delivered actionable insights revealing 36.3% increase in unique products across 8 APAC countries. Executed 10 targeted SQL queries using joins, CTEs, window functions. Highlighted retailer channels as primary revenue drivers with 73% of gross sales.</p>
+                    <div class="project-tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Advanced Queries</span>
+                    </div>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">36.3%</span>
+                            <span class="metric-label">Growth</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">8</span>
+                            <span class="metric-label">Countries</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">📈</div>
+                    <h3>Business Insight 360</h3>
+                    <p class="project-desc">Designed multi-view Power BI dashboard for 5 departments at AtliQ Hardware. Integrated 1M+ records from MySQL and Excel. Achieved 25% storage reduction and 10% efficiency improvement. Delivered insights projecting 10% revenue growth.</p>
+                    <div class="project-tags">
+                        <span class="tag">Power BI</span>
+                        <span class="tag">DAX Studio</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">1M+</span>
+                            <span class="metric-label">Records</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">25%</span>
+                            <span class="metric-label">Storage Saved</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">🏨</div>
+                    <h3>Hotel Chain Management System</h3>
+                    <p class="project-desc">Developed comprehensive hotel chain analytics system analyzing revenue, occupancy rates, and guest satisfaction across multiple properties. Implemented advanced SQL queries for booking patterns, seasonal trends, and performance benchmarking.</p>
+                    <div class="project-tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">Data Modeling</span>
+                        <span class="tag">Analytics</span>
+                    </div>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">85%</span>
+                            <span class="metric-label">Occupancy Rate</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">Multi</span>
+                            <span class="metric-label">Properties</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">🚕</div>
+                    <h3>GoodCabs Analysis - Codebasics Challenge</h3>
+                    <p class="project-desc">Consumer Goods Sales Analysis using SQL & MySQL for cab services. Implemented advanced SQL techniques including window functions, triggers, and churn analysis. Used CTEs and self-joins for comprehensive sales insights and rider behavior analysis.</p>
+                    <div class="project-tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Codebasics</span>
+                    </div>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">Advanced</span>
+                            <span class="metric-label">SQL Queries</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">Full Suite</span>
+                            <span class="metric-label">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="tag">&lt;certifications&gt;</span>
+                CERTIFICATIONS & AWARDS
+                <span class="tag">&lt;/certifications&gt;</span>
+            </h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">🏆</div>
+                    <h3>Power BI Data Analytics</h3>
+                    <p>Get Job Ready: Power BI Data Analytics for All Levels 2.0</p>
+                    <span class="cert-badge">Codebasics</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">📊</div>
+                    <h3>Excel: Mother of BI</h3>
+                    <p>Excel: Mother of Business Intelligence</p>
+                    <span class="cert-badge">Codebasics</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">💻</div>
+                    <h3>SQL Professional</h3>
+                    <p>SQL Beginner to Advanced For Data Professionals</p>
+                    <span class="cert-badge">Certified</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">⭐</div>
+                    <h3>SQL Gold Badge</h3>
+                    <p>SQL 5 Star Gold Badge</p>
+                    <span class="cert-badge">Hackerrank</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🏅</div>
+                    <h3>Accenture Simulation</h3>
+                    <p>Data Analyst Job Simulation</p>
+                    <span class="cert-badge">Forage</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🥇</div>
+                    <h3>Webzy Hackathon Winner</h3>
+                    <p>1st Prize - Inter College Webzy Hackathon Winner</p>
+                    <span class="cert-badge">Winner</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <h3>MSFDA Initiative</h3>
+                    <p>Maharashtra State Government</p>
+                    <span class="cert-badge">Government</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">📋</div>
+                    <h3>Rank MOM Exam</h3>
+                    <p>Rank Holder in MOM Exam</p>
+                    <span class="cert-badge">Rank Holder</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="tag">&lt;contact&gt;</span>
+                LET'S CONNECT
+                <span class="tag">&lt;/contact&gt;</span>
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p class="contact-text">Have a dataset that needs analysis? Let's transform your data into insights.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">💼</div>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p><a href="https://www.linkedin.com/in/nayan-hore-a6391823b" target="_blank" style="color: var(--accent-primary); text-decoration: none;">linkedin.com/in/nayan-hore</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">🐙</div>
+                            <div>
+                                <h4>GitHub</h4>
+                                <p><a href="https://github.com/Nayan808" target="_blank" style="color: var(--accent-primary); text-decoration: none;">github.com/Nayan808</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>nnhore31@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 9022035808</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">🎓</div>
+                            <div>
+                                <h4>Education</h4>
+                                <p>MCA - Computer Science (8.10 CGPA)<br>BCCA - Computer Science</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Nagpur, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-chart">
+                    <canvas id="contactChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Nayan Hore. All insights analyzed.</p>
+                <p class="footer-code">console.log("Data is beautiful when visualized correctly.");</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
