@@ -186,6 +186,43 @@ body {
     height: 300px;
 }
 
+.hero-cta {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 10;
+}
+
+.cv-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: var(--bg-primary);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 217, 255, 0.3);
+    border: 2px solid transparent;
+}
+
+.cv-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 217, 255, 0.5);
+    border-color: var(--accent-primary);
+}
+
+.button-icon {
+    font-size: 1.3rem;
+}
+
 .scroll-indicator {
     position: absolute;
     bottom: 2rem;
@@ -545,6 +582,15 @@ section {
     margin-bottom: 2rem;
 }
 
+.contact-cv-button {
+    margin-bottom: 2rem;
+}
+
+.contact-cv-button .cv-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+}
+
 .contact-methods {
     display: flex;
     flex-direction: column;
@@ -620,6 +666,15 @@ section {
 
     .hero-content {
         grid-template-columns: 1fr;
+    }
+
+    .hero-cta {
+        bottom: 4rem;
+    }
+
+    .cv-button {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
     }
 
     .section-title {
